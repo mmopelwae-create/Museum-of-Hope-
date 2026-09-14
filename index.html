@@ -1,1 +1,582 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Museum of Hope | Where Stories Inspire Tomorrow</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #102a43, #1f5f74);
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ffd166;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    .hero {
+      min-height: 85vh;
+      background:
+        linear-gradient(rgba(16,42,67,0.82), rgba(31,95,116,0.82)),
+        url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 60px 7%;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #ffd166;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #ffd166;
+      color: #102a43;
+      padding: 15px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background: white;
+    }
+
+    .button-outline {
+      display: inline-block;
+      border: 2px solid white;
+      color: white;
+      padding: 13px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    section {
+      padding: 75px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      color: #102a43;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      max-width: 700px;
+      margin: auto;
+      color: #555;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      align-items: center;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .about-text h3 {
+      font-size: 30px;
+      color: #1f5f74;
+      margin-bottom: 18px;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .hope-section {
+      background: #eef5f7;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .card .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #102a43;
+      margin-bottom: 12px;
+    }
+
+    .scripture {
+      background: linear-gradient(135deg, #102a43, #1f5f74);
+      color: white;
+      text-align: center;
+    }
+
+    .scripture blockquote {
+      max-width: 850px;
+      margin: auto;
+      font-size: 28px;
+      font-style: italic;
+    }
+
+    .scripture p {
+      margin-top: 20px;
+      color: #ffd166;
+      font-weight: bold;
+    }
+
+    .stories {
+      background: white;
+    }
+
+    .story-card {
+      background: #f7f7f7;
+      padding: 25px;
+      border-left: 5px solid #ffd166;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .story-card h3 {
+      color: #1f5f74;
+      margin-bottom: 10px;
+    }
+
+    .support {
+      background: #eef5f7;
+    }
+
+    .support-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      background: white;
+      padding: 45px 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .support-box h2 {
+      color: #102a43;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      background: white;
+    }
+
+    .contact-box {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .contact-box p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #102a43;
+      color: white;
+      text-align: center;
+      padding: 30px 7%;
+    }
+
+    footer p {
+      margin: 8px 0;
+    }
+
+    @media (max-width: 800px) {
+
+      header {
+        justify-content: center;
+        gap: 15px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+
+      .scripture blockquote {
+        font-size: 22px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Museum of <span>Hope</span></div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Our Mission</a>
+      <a href="#hope">Hope</a>
+      <a href="#stories">Stories</a>
+      <a href="#support">Support</a>
+    </nav>
+  </header>
+
+
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <h1>Welcome to the <span>Museum of Hope</span></h1>
+
+      <p>
+        A place where stories of courage, faith, resilience and transformation
+        remind us that no matter how difficult life becomes, hope can still rise.
+      </p>
+
+      <a href="#about" class="button">Discover Our Mission</a>
+
+      <a href="#stories" class="button-outline">Explore Stories</a>
+
+    </div>
+
+  </section>
+
+
+  <section class="about" id="about">
+
+    <div class="about-grid">
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=80" alt="Hope and inspiration">
+      </div>
+
+      <div class="about-text">
+
+        <h3>Preserving Stories That Inspire Humanity</h3>
+
+        <p>
+          The Museum of Hope exists to celebrate the power of people who have
+          faced challenges and continued moving forward.
+        </p>
+
+        <p>
+          Through stories, memories, faith, creativity and human experience,
+          we create a space where people can remember that their past does not
+          have to define their future.
+        </p>
+
+        <p>
+          Every story of survival can become a light for someone walking
+          through darkness today.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="hope-section" id="hope">
+
+    <div class="section-title">
+
+      <h2>What Hope Means to Us</h2>
+
+      <p>
+        Hope is more than a feeling. It is the courage to continue when the
+        future is uncertain.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="icon">❤️</div>
+
+        <h3>Hope Through Courage</h3>
+
+        <p>
+          We celebrate people who continue standing, even when life gives them
+          reasons to give up.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🤝</div>
+
+        <h3>Hope Through Community</h3>
+
+        <p>
+          No one should walk through difficult seasons alone. Together, we can
+          lift one another.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="icon">🌅</div>
+
+        <h3>Hope for Tomorrow</h3>
+
+        <p>
+          Every new day brings another opportunity to rebuild, grow, heal and
+          begin again.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="scripture">
+
+    <blockquote>
+      "For I know the plans I have for you," declares the Lord,
+      "plans to prosper you and not to harm you, plans to give you hope and a future."
+    </blockquote>
+
+    <p>Jeremiah 29:11</p>
+
+  </section>
+
+
+  <section class="stories" id="stories">
+
+    <div class="section-title">
+
+      <h2>Stories of Hope</h2>
+
+      <p>
+        Every person carries a story. Some stories remind us why we should
+        never give up.
+      </p>
+
+    </div>
+
+
+    <div class="story-card">
+
+      <h3>From Darkness to New Beginnings</h3>
+
+      <p>
+        Sometimes life takes us through seasons we never expected. Yet even in
+        difficult moments, small acts of courage can lead to extraordinary new
+        beginnings.
+      </p>
+
+    </div>
+
+
+    <div class="story-card">
+
+      <h3>Strength Found in Faith</h3>
+
+      <p>
+        Faith can give people the strength to continue when they cannot yet see
+        the full path ahead.
+      </p>
+
+    </div>
+
+
+    <div class="story-card">
+
+      <h3>The Power of Never Giving Up</h3>
+
+      <p>
+        Progress is not always fast. Sometimes hope simply means taking one more
+        step forward.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <section class="support" id="support">
+
+    <div class="support-box">
+
+      <h2>Help Us Spread Hope</h2>
+
+      <p>
+        The Museum of Hope is a growing vision. You can become part of this
+        journey by sharing stories, supporting the mission and encouraging
+        others.
+      </p>
+
+      <br>
+
+      <a href="#contact" class="button">Get Involved</a>
+
+    </div>
+
+  </section>
+
+
+  <section class="contact" id="contact">
+
+    <div class="contact-box">
+
+      <div class="section-title">
+
+        <h2>Connect With Us</h2>
+
+        <p>
+          Do you have a story of hope, courage or transformation that could
+          inspire someone else?
+        </p>
+
+      </div>
+
+      <p>
+        The Museum of Hope welcomes people who want to share inspiration,
+        encouragement and stories that remind the world that hope is still alive.
+      </p>
+
+      <a href="mailto:your@email.com" class="button">
+        Contact the Museum of Hope
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    <h3>Museum of Hope</h3>
+
+    <p>Where stories inspire tomorrow.</p>
+
+    <p>© 2026 Museum of Hope. All rights reserved.</p>
+
+  </footer>
+
+</body>
+</html>
