@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hall of Faith | Museum of Hope</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f7f4ed;
+color:#222;
+line-height:1.7;
+}
+header{
+background:linear-gradient(135deg,#102a43,#164e63);
+color:white;
+padding:30px 20px;
+text-align:center;
+}
+header h1{font-size:38px;margin-bottom:8px}
+.gold{color:#ffd166}
+nav{margin-top:18px}
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+font-weight:bold;
+}
+.hero{
+padding:75px 20px;
+text-align:center;
+background:linear-gradient(rgba(10,35,55,.82),rgba(10,35,55,.82)),
+url("https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+}
+.hero h2{font-size:48px;margin-bottom:15px}
+.hero p{font-size:20px;max-width:750px;margin:auto}
+.container{max-width:1000px;margin:auto;padding:50px 20px}
+.intro{text-align:center;margin-bottom:40px}
+.intro h2{font-size:34px;color:#164e63;margin-bottom:15px}
+.exhibits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+.card{
+background:white;
+padding:28px;
+border-radius:14px;
+box-shadow:0 5px 18px rgba(0,0,0,.1);
+border-top:5px solid #d4a017;
+}
+.card h3{color:#164e63;font-size:25px;margin-bottom:12px}
+.scripture{
+background:#fff8df;
+border-left:5px solid #d4a017;
+padding:15px;
+margin:18px 0;
+font-style:italic;
+}
+.lesson{font-weight:bold;color:#164e63}
+.reflection{
+margin-top:45px;
+background:#102a43;
+color:white;
+padding:40px 25px;
+border-radius:16px;
+text-align:center;
+}
+.reflection h2{color:#ffd166;margin-bottom:15px}
+footer{
+background:#102a43;
+color:white;
+text-align:center;
+padding:30px 20px;
+margin-top:40px;
+}
+.button{
+display:inline-block;
+margin-top:20px;
+padding:12px 22px;
+background:#ffd166;
+color:#102a43;
+text-decoration:none;
+font-weight:bold;
+border-radius:25px;
+}
+@media(max-width:600px){
+header h1{font-size:30px}
+.hero h2{font-size:36px}
+nav a{display:inline-block;margin:6px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Museum of <span class="gold">Hope</span></h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="#exhibits">Exhibits</a>
+<a href="#reflection">Reflection</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Hall of Faith</h2>
+<p>
+Stories of ordinary people who trusted God through impossible
+journeys, painful seasons and uncertain futures.
+</p>
+</section>
+
+<main class="container">
+
+<section class="intro">
+<h2>Welcome to the Hall of Faith</h2>
+<p>
+Faith does not mean that the road is always easy.
+It means believing that God is with us even when we cannot
+see the whole road ahead.
+</p>
+</section>
+
+<section id="exhibits" class="exhibits">
+
+<article class="card">
+<h3>Abraham — The Journey of Faith</h3>
+<p>
+God called Abraham to leave what was familiar and journey
+toward a land God would show him. Abraham stepped forward
+without knowing every detail of the destination.
+</p>
+<div class="scripture">
+“Go from your country... to the land I will show you.”
+<br><strong>Genesis 12:1</strong>
+</div>
+<p class="lesson">Lesson:</p>
+<p>
+Faith sometimes means taking the next step before you can
+see the entire path.
+</p>
+</article>
+
+<article class="card">
+<h3>Joseph — From the Pit to Purpose</h3>
+<p>
+Joseph experienced betrayal, slavery and imprisonment.
+Yet God continued working through his story until Joseph
+was positioned to save many lives.
+</p>
+<div class="scripture">
+“You intended to harm me, but God intended it for good.”
+<br><strong>Genesis 50:20</strong>
+</div>
+<p class="lesson">Lesson:</p>
+<p>
+A painful chapter does not mean your story is finished.
+</p>
+</article>
+
+<article class="card">
+<h3>Moses — Courage to Lead</h3>
+<p>
+Moses felt inadequate when God called him to lead Israel.
+God did not require Moses to have every answer.
+He promised to be with him.
+</p>
+<div class="scripture">
+“I will be with you.”
+<br><strong>Exodus 3:12</strong>
+</div>
+<p class="lesson">Lesson:</p>
+<p>
+You do not have to feel strong before you obey God's calling.
+</p>
+</article>
+
+<article class="card">
+<h3>David — From Shepherd to King</h3>
+<p>
+David began as a shepherd and faced the giant Goliath
+with courage rooted in his trust in God.
+</p>
+<div class="scripture">
+“The battle is the Lord's.”
+<br><strong>1 Samuel 17:47</strong>
+</div>
+<p class="lesson">Lesson:</p>
+<p>
+Your current position does not determine your future.
+God can use you where you are.
+</p>
+</article>
+
+<article class="card">
+<h3>Esther — Courage for a Purpose</h3>
+<p>
+Esther risked her position and safety to stand up for her
+people. Her courage became part of a much greater purpose.
+</p>
+<div class="scripture">
+“Perhaps you were born for such a time as this.”
+<br><strong>Esther 4:14</strong>
+</div>
+<p class="lesson">Lesson:</p>
+<p>
+Sometimes courage means using your voice when remaining
+silent would be easier.
+</p>
+</article>
+
+<article class="card">
+<h3>Paul — Faith Through Trials</h3>
+<p>
+Paul faced rejection, imprisonment, persecution and hardship,
+yet he continued sharing the message of Christ.
+</p>
+<div class="scripture">
+“I can do all things through Christ who strengthens me.”
+<br><strong>Philippians 4:13</strong>
+</div>
+<p class="lesson">Lesson:</p>
+<p>
+Faith can keep moving forward even when circumstances
+try to stop you.
+</p>
+</article>
+
+</section>
+
+<section id="reflection" class="reflection">
+<h2>Reflection Room</h2>
+<p>
+Take a quiet moment.
+What are you facing today that requires faith?
+What is the next step you can take, even if you cannot
+see the whole journey?
+</p>
+
+<p style="margin-top:20px;font-size:20px">
+“Now faith is confidence in what we hope for and assurance
+about what we do not see.”
+</p>
+
+<p style="margin-top:10px">— Hebrews 11:1</p>
+
+<a class="button" href="index.html">Return to Museum</a>
+</section>
+
+</main>
+
+<footer>
+<p><strong>The Museum of Hope</strong></p>
+<p>Faith • Hope • Strength • Human Stories</p>
+<p style="margin-top:10px">
+A place where stories inspire tomorrow.
+</p>
+</footer>
+
+</body>
+</html>
