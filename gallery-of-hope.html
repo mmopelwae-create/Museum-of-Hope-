@@ -1,1 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery of Hope | Museum of Hope</title>
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f1e8;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #173f5f, #20639b);
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 42px;
+}
+
+header p {
+  margin: 0;
+  font-size: 18px;
+}
+
+nav {
+  background: #102f45;
+  text-align: center;
+  padding: 14px 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px 35px;
+}
+
+.hero h2 {
+  color: #173f5f;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.gallery {
+  max-width: 1100px;
+  margin: 20px auto 60px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.art-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.art-placeholder {
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: linear-gradient(135deg, #dcecf7, #b8d4e8);
+  color: #173f5f;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.art-card h3 {
+  margin: 18px 12px 8px;
+  color: #173f5f;
+}
+
+.art-card p {
+  margin: 0 15px 20px;
+  color: #555;
+}
+
+.return {
+  text-align: center;
+  padding: 35px 20px 55px;
+}
+
+.return a {
+  display: inline-block;
+  background: #173f5f;
+  color: white;
+  text-decoration: none;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.return a:hover {
+  background: #20639b;
+}
+
+footer {
+  background: #102f45;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
+    font-size: 27px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 7px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Gallery of Hope</h1>
+  <p>A collection of art created to inspire hope, courage and possibility.</p>
+</header>
+
+<nav>
+  <a href="index.html">Museum of Hope</a>
+  <a href="hall-of-faith.html">Hall of Faith</a>
+  <a href="gallery-of-hope.html">Gallery of Hope</a>
+</nav>
+
+<section class="hero">
+  <h2>Welcome to the Gallery of Hope</h2>
+  <p>
+    Step inside a collection of meaningful digital artworks.
+    Each piece carries a message of hope and reminds us that
+    even in difficult seasons, tomorrow can still hold something beautiful.
+  </p>
+</section>
+
+<section class="gallery">
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 01</div>
+    <h3>Hope Begins</h3>
+    <p>The beginning of a journey toward hope.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 02</div>
+    <h3>Keep Going</h3>
+    <p>A reminder to continue moving forward.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 03</div>
+    <h3>Light in Darkness</h3>
+    <p>Hope can shine even in difficult seasons.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 04</div>
+    <h3>New Beginning</h3>
+    <p>Every new day brings another opportunity.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 05</div>
+    <h3>Strength</h3>
+    <p>Courage grows when we refuse to give up.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 06</div>
+    <h3>Faith</h3>
+    <p>Believe that better days can come.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 07</div>
+    <h3>Dream Again</h3>
+    <p>It is never too late to dream again.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 08</div>
+    <h3>Peace</h3>
+    <p>Find moments of peace along the journey.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 09</div>
+    <h3>Courage</h3>
+    <p>Take the next step with courage.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 10</div>
+    <h3>Possibility</h3>
+    <p>There is always another possibility.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 11</div>
+    <h3>Rise</h3>
+    <p>Rise again after every setback.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 12</div>
+    <h3>Purpose</h3>
+    <p>Your journey can have meaning.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 13</div>
+    <h3>Tomorrow</h3>
+    <p>Tomorrow is another chance to begin.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 14</div>
+    <h3>Believe</h3>
+    <p>Hold on to what gives you hope.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 15</div>
+    <h3>Journey</h3>
+    <p>Every step is part of the story.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 16</div>
+    <h3>Grace</h3>
+    <p>Give yourself room to grow.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 17</div>
+    <h3>Joy</h3>
+    <p>Make room for moments of joy.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 18</div>
+    <h3>Vision</h3>
+    <p>Look toward the future with hope.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 19</div>
+    <h3>Endurance</h3>
+    <p>Keep walking even when the road is difficult.</p>
+  </div>
+
+  <div class="art-card">
+    <div class="art-placeholder">Artwork 20</div>
+    <h3>Hope Lives</h3>
+    <p>A final reminder that hope remains.</p>
+  </div>
+
+</section>
+
+<section class="return">
+  <a href="index.html">← Return to Museum of Hope</a>
+</section>
+
+<footer>
+  <p>© 2026 Museum of Hope</p>
+  <p>Where stories inspire tomorrow.</p>
+</footer>
+
+</body>
+  </html>
